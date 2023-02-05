@@ -9,6 +9,7 @@ Due to time constraints, this program is an implementation of the core business 
 1. It was originally assumed that tap/s would be received via API calls rather than a CSV in a real-world scenario (hence the use of Springboot as I planned to implement the api part of the application, but due to time contraints, that aspect was not completed).
 2. As highlighted in the document, it is assumed that the tap data will be valid and in the correct format.
 3. It is assumed that the data returned in CSV is of high priority and hence generic async DB persist is used. If DB is to be used to trigger event (add trips to queue to be processed by payments service), that logic should be removed.
+4. It is assumed that the tap on and tap off entries for a given PAN are sequential, followed by each other.
 
 ## Further Improvements
 1. First and foremost, The PAN data should be appropriately encrypted and the application should be secured if it's meant to be an API (which is preferred).
