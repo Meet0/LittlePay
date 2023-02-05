@@ -38,3 +38,5 @@ out/
 .vscode/
 
 trips.csv
+gradlew
+gradlew.bat
